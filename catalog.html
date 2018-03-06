@@ -9,29 +9,63 @@
   <body>
     <header class="main-header">
       <a class="logo">Device</a>
-      <p>
-        <input type="text"><label>Поиск по сайту</label>
-        <a href="#">Войти</a>
-        <a href="#">Сравнить</a>
-        <a href="#">Корзина</a>
-      </p>
-      <nav class="main-menu">
-        <ul class="main-menu-list">
-          <li><a href="#">Каталог товаров</a>
-            <ul class="catalog-menu">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="header-top">
+        <form action="get" class="search-form">
+          <input type="text">
+          <label>Поиск по сайту</label>
+        </form>
+        <div class="user-activity">
+          <ul class="user-activity-list">
+            <li class="user-activity-item">
+              <a href="#">Войти</a>
+            </li>
+            <li class="user-activity-item">
+              <a href="#">Сравнить</a>
+            </li>
+            <li class="user-activity-item">
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav class="main-menu">
+          <ul class="main-menu-list">
+            <li>
+              <a href="#">Каталог товаров</a>
+              <ul class="catalog-menu">
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
+                <li>
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
+                <li>
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
@@ -41,10 +75,10 @@
         <li><a href="#">Каталог товаров</a></li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
-      <section class="filters">
+      <aside class="filters">
         <h2>Фильтры:</h2>
         <!-- Здесь будет форма -->
-      </section>
+      </aside>
       <section class="sorting">
         <h2>Сортировка:</h2>
         <ul class="sorting-list">
@@ -54,6 +88,9 @@
         </ul>
         <button class="btn btn-up">Вверх</button>
         <button class="btn btn-down">Вниз</button>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">
           <li>
             <h3>Люительская селфи-палка</h3>
@@ -108,43 +145,58 @@
           </span>
         </li>
         </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">Назад</a></li>
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Вперед</a></li>
-        </ul>
+        <nav class="pagination">
+          <ul class="pagination-list">
+            <li class="pagination-item"><a href="#">Назад</a></li>
+            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Вперед</a></li>
+          </ul>
+        </nav>
       </section>
     </main>
 
     <footer class="main-footer">
-      <a class="logo-yellow">Device</a>
-      <p>
+      <a class="logo logo-yellow">Device</a>
+      <address>
         г. Москва, ул. Строителей, 15
-      </p>
+      </address>
       <ul class="menu-list">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
       </ul>
       <div class="social-networks">
         <ul>
-          <li><a href="#" class="social-button">Фейсбук</a></li>
-          <li><a href="#" class="social-button">Инстаграм</a></li>
-          <li><a href="#" class="social-button">Твиттер</a></li>
+          <li>
+            <a href="#" class="social-button">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#" class="social-button">Инстаграм</a>
+          </li>
+          <li>
+            <a href="#" class="social-button">Твиттер</a>
+          </li>
         </ul>
       </div>
       <p>
-        <input type="text"><label>Поиск по сайту</label>
+        <input type="text">
+        <label>Поиск по сайту</label>
         <a href="#">Войти</a>
         <a href="#">Сравнить</a>
         <a href="#">Корзина</a>
       </p>
       <span class="phone">
-        Тел.: +7 (495) 495-95-95
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright">HTML Academy</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="creator">HTML Academy</a>
     </footer>
 
   </body>
