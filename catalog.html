@@ -11,8 +11,11 @@
       <a class="logo">Device</a>
       <div class="header-top">
         <form action="get" class="search-form">
-          <input type="text" placeholder="Поиск по сайту">
-          <button class="btn">Найти</button>
+          <label for="search-input">
+            Поиск по сайту
+          </label>
+          <input type="text" id="search-input">
+          <button type="submit" class="btn">Найти</button>
         </form>
         </form>
         <div class="user-activity">
@@ -76,9 +79,67 @@
         <li><a href="#">Каталог товаров</a></li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
-      <aside class="filters">
-        <h2>Фильтры:</h2>
-        <!-- Здесь будет форма -->
+      <aside class="aside-filters">
+        <h2>Фильтр:</h2>
+        <form class="filter-form">
+          <div class="price">
+            <input type="range">
+          </div>
+          <fieldset>
+            <legend>
+              Цвет
+            </legend>
+            <p>
+              <input id="color-black" type="checkbox">
+              <label for="color-black">
+                Черный
+              </label>
+            </p>
+            <p>
+              <input id="color-white" type="checkbox">
+              <label for="color-white">
+                Белый
+              </label>
+            </p>
+            <p>
+              <input id="color-blue" type="checkbox">
+              <label for="color-blue">
+                Синий
+              </label>
+            </p>
+            <p>
+              <input id="color-red" type="checkbox">
+              <label for="color-red">
+                Красный
+              </label>
+            </p>
+            <p>
+              <input id="color-pink" type="checkbox">
+              <label for="color-pink">
+                Розовый
+              </label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Bluetooth
+            </legend>
+            <p>
+              <input id="radio-yes" type="radio">
+              <label for="radio-yes">
+                Есть
+              </label>
+            </p>
+            <p>
+              <input id="radio-no" type="radio">
+              <label for="radio-no">
+                Нет
+              </label>
+            </p>
+          </fieldset>
+          <button class="btn" type="submit">Показать</button>
+        </form>
+
       </aside>
       <section class="sorting">
         <h2>Сортировка:</h2>
