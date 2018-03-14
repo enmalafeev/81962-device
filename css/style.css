@@ -266,6 +266,12 @@ a {
   letter-spacing: 0.2em;
 }
 
+.user-activity a {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+}
+
 /* FOOTER END */
 
 /*MODAL START*/
@@ -292,6 +298,121 @@ a {
 
 
 /*MODAL END*/
+
+/*CATALOG PAGE START*/
+
+.container h1 {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.breadcrumbs {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.breadcrumbs li {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.aside-filters {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  
+  background-color: #efefef;
+  color: #000000;
+}
+
+.aside-filters h2,
+.sorting h2 {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.filter-form legend {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.sorting-list {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sorting-list li {
+  list-style: none;
+}
+
+.sorting-list a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sorting-list a:hover,
+.sorting-list a:focus {
+  opacity: 0.6;
+}
+
+.sorting-list a:active {
+  opacity: 1;
+}
+
+.catalog-list h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.price {
+  font-family: 'Gilroy Light', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+  color: #464646;
+}
+
+.catalog-list li {
+  list-style: none;
+}
+
+.pagination {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  background-color: #ebebeb;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.pagination-list li {
+  list-style: none;
+}
+
+.pagination-list a {
+  color: #000000;
+}
+/*CATALOG PAGE END*/
 
 
 

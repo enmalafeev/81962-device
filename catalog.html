@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Каталог товаров Девайс</title>
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="main-header">
       <a href="index.html" class="logo">Device</a>
       <div class="header-top">
@@ -78,18 +78,17 @@
       <ul class="breadcrumbs">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
-      </ul>
+        <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+      </ul>  
       <aside class="aside-filters">
         <h2>Фильтр:</h2>
         <form class="filter-form">
           <div class="price">
+            <legend>Стоимость</legend>
             <input type="range">
           </div>
           <fieldset>
-            <legend>
-              Цвет
-            </legend>
+            <legend>Цвет</legend>
             <p>
               <input id="color-black" type="checkbox">
               <label for="color-black">
@@ -156,7 +155,7 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">
           <li>
-            <h3>Люительская селфи-палка</h3>
+            <h3>Любительская селфи-палка</h3>
             <p>
               <a href="#">
                 <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
