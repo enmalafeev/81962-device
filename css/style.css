@@ -11,7 +11,7 @@
   font-weight: normal;
   font-style: normal;
 }
-
+  
 @font-face {
   font-family: 'open_sanslight';
   src: url('opensans-light-webfont.woff2') format('woff2');
@@ -33,7 +33,7 @@ body {
   font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.01em;
   color: #000000;
 
@@ -73,18 +73,18 @@ a {
 
 .logo:hover,
 .logo:focus {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .logo:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .header-top {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: 300;
   letter-spacing: 0.01em;
 }
 
@@ -96,8 +96,8 @@ a {
 .catalog-menu {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
-  line-height: 36px;
-  font-weight: normal;
+  line-height: 35px;
+  font-weight: 300;
   letter-spacing: 0.01em;
   text-transform: none;
 }
@@ -121,14 +121,14 @@ a {
 .main-menu a:focus,
 .catalog-menu a:hover,
 .catalog-menu a:focus {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .user-activity a:active,
 .main-menu a:active,
 .catalog-menu a:active {
-  opacity: 0.3;
-}
+  color: rgba(0, 0, 0, 0.3);
+  }
 
 /* HEADER END */
 
@@ -139,21 +139,36 @@ a {
 }
 
 .slider-item h3 {
-  font-size: 47px;
+  font-size: 48px;
   line-height: 56px;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.01em;
   color: #000000;
 }
 
-.slider-desc,
-.product-table {
+.slider-desc {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: 300;
   letter-spacing: 0.01em;
   color: #000000;
+}
+
+.product-table tr {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.product-table th {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
 }
 
 .categories-list li {
@@ -164,7 +179,7 @@ a {
   color: #000000;
 }
 .categories-list a:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .services {
@@ -183,16 +198,16 @@ a {
 
 .services-content h3{
   font-family: 'Gilroy', Arial, sans-serif;
-  font-size: 47px;
+  font-size: 48px;
   line-height: 48px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .services-desc {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: 300;
   letter-spacing: 0.01em;
 }
 
@@ -201,7 +216,7 @@ a {
 }
 
 .index-colls h2 { 
-  font-size: 47px;
+  font-size: 48px;
   line-height: 48px;
 }
 
@@ -220,32 +235,44 @@ a {
   color: #ffffff;
 }
 
+.main-footer a {
+  color: #ffffff;
+}
+
+.main-footer a:hover,
+.main-footer a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .main-footer .logo-yellow {
   color: #ffc600;
+}
+
+.main-footer .logo-yellow:hover,
+.main-footer .logo-yellow:focus {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.main-footer .logo-yellow:active {
+  color: rgba(255, 198, 0, 0.3); 
 }
 
 .main-footer address {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
+  font-weight: 300;
   font-style: normal;
+  
+  color: #ffffff;
 }
 
 .main-footer li {
   list-style: none;
-}
-
-.main-footer li:hover,
-.main-footer li:focus {
-  opacity: 0.6;
-}
-
-.main-footer li:active {
-  opacity: 0.3;
-}
-
-.main-footer a {
-  color: #ffffff;
 }
 
 .menu-list a {
@@ -253,23 +280,26 @@ a {
   letter-spacing: 0.2em;
 }
 
-.menu-list a:hover,
-.menu-list:focus {
-  opacity: 0.6;
-}
-
-.main-footer a:active {
-  opacity: 0.3;
-}
-
 .menu-list a {
   letter-spacing: 0.2em;
 }
 
-.user-activity a {
+.main-footer .user-activity a {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
-  line-height: 36px;
+  line-height: 35px;
+  font-weight: 300;
+  
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer .user-activity a:hover, 
+.main-footer .user-activity a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-footer .user-activity a:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* FOOTER END */
@@ -302,7 +332,7 @@ a {
 /*CATALOG PAGE START*/
 
 .container h1 {
-  font-size: 47px;
+  font-size: 48px;
   line-height: 48px;
 }
 
@@ -310,6 +340,7 @@ a {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
+  font-weight: 400;
 }
 
 .breadcrumbs li {
