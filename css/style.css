@@ -69,6 +69,7 @@ a {
 .container {
   width: 1160px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 /* HEADER START */
@@ -207,6 +208,15 @@ a {
   letter-spacing: 0.01em;
 }
 
+.categories {
+  margin-bottom: 180px;
+}
+
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .categories-list li {
   list-style: none;
 }
@@ -221,6 +231,8 @@ a {
 .services {
   background-color: #e5e5e5;
   color: #000000;
+  
+  margin-bottom: 95px;
 }
 
 .services-menu li {
@@ -248,6 +260,10 @@ a {
 }
 
 .brands-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -262,6 +278,19 @@ a {
   line-height: 30px;
 }
 
+.index-colls .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 480px;
+}
+
+.contacts {
+  width: 560px;
+}
+
 /* MAIN END */
 
 /* FOOTER START */
@@ -269,6 +298,24 @@ a {
 .main-footer {
   background-color: #464646;
   color: #ffffff;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-colls:nth-child(1) {
+  width: 260px;
+  margin-right: auto;
+}
+
+.footer-colls:nth-child(2) {
+  width: 440px;
+}
+
+.footer-colls:nth-child(3) {
+  width: 360px;
 }
 
 .main-footer a {
