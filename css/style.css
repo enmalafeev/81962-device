@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'gilroyextrabold';
-  src: url('gilroyextrabold-webfont.woff2') format('woff2');
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gilroylight';
-  src: url('gilroylight-webfont.woff2') format('woff2');
+  src: url('../fonts/gilroylight.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
   
 @font-face {
   font-family: 'open_sanslight';
-  src: url('opensans-light-webfont.woff2') format('woff2');
+  src: url('../fonts/opensans-light.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'open_sansregular';
-  src: url('opensans-regular-webfont.woff2') format('woff2');
+  src: url('../fonts/opensans-regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,7 +30,7 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
@@ -92,6 +92,8 @@ a {
   line-height: 48px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  position: relative;
+  top: -23px;
 }
 
 .logo:hover,
@@ -108,7 +110,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -121,7 +123,7 @@ a {
 }
 
 .catalog-menu {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 35px;
   font-weight: 300;
@@ -185,7 +187,7 @@ a {
 }
 
 .slider-desc {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -194,7 +196,7 @@ a {
 }
 
 .product-table tr {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'gilroylight', Arial, sans-serif;
   font-size: 36px;
   line-height: 38px;
   font-weight: 300;
@@ -202,7 +204,7 @@ a {
 }
 
 .product-table th {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -246,14 +248,14 @@ a {
 }
 
 .services-content h3{
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 48px;
   line-height: 48px;
   font-weight: 900;
 }
 
 .services-desc {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -274,7 +276,7 @@ a {
 }
 
 .index-colls p {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
 }
@@ -348,7 +350,7 @@ a {
 }
 
 .main-footer address {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -371,7 +373,7 @@ a {
 }
 
 .main-footer .user-activity a {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 35px;
   font-weight: 300;
@@ -393,7 +395,7 @@ a {
 /*MODAL START*/
 
 .feedback-form input{
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-style: normal;
@@ -448,7 +450,7 @@ a {
 
 
 .breadcrumbs {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sansregular', Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -472,7 +474,7 @@ a {
 }
 
 .aside-filters {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
   font-weight: 300;
@@ -483,7 +485,7 @@ a {
 
 .aside-filters h2,
 .sorting h2 {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 900;
@@ -492,14 +494,14 @@ a {
 }
 
 .filter-form legend {
-  font-family: 'Gilroy', Arial, sans-serif;
+  font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
 }
 
 .sorting-list {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'open_sansregular', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -534,7 +536,7 @@ a {
 }
 
 .price {
-  font-family: 'Gilroy Light', Arial, sans-serif;
+  font-family: 'gilroylight', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
