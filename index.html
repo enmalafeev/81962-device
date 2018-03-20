@@ -13,21 +13,18 @@
       <a class="logo">Device</a>
       <div class="header-top">
         <form action="get" class="search-form">
-          <input type="text" id="search-input">
-          <label for="search-input">
-            Поиск по сайту
-          </label>
-          <button type="submit" class="btn">Найти</button>
+          <input type="text" class="search-input" placeholder="Поиск по сайту">
+          <button type="submit" class="btn btn-search">Найти</button>
         </form>
         <div class="user-activity">
           <ul class="user-activity-list">
-            <li class="user-activity-item">
+            <li class="user-activity-item login">
               <a href="#">Войти</a>
             </li>
-            <li class="user-activity-item">
+            <li class="user-activity-item compare">
               <a href="#">Сравнить</a>
             </li>
-            <li class="user-activity-item">
+            <li class="user-activity-item cart">
               <a href="#">Корзина</a>
             </li>
           </ul>
@@ -36,7 +33,7 @@
       <div class="header-bottom">
         <nav class="main-menu">
           <ul class="main-menu-list">
-            <li>
+            <li class="main-menu-item">
               <a href="#">Каталог товаров</a>
               <ul class="catalog-menu">
                 <li>
@@ -59,13 +56,13 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="main-menu-item">
               <a href="#">Доставка</a>
             </li>
-            <li>
+            <li class="main-menu-item">
               <a href="#">Гарантия</a>
             </li>
-            <li>
+            <li class="main-menu-item">
               <a href="#">Контакты</a>
             </li>
           </ul>
@@ -75,7 +72,7 @@
 
     <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
-      <section class="slider">
+      <section class="slider container">
         <h2 class="visually-hidden">Самые популярные товары</h2>
         <div class="slider-wrap">
           <ul class="slider-list">
@@ -265,19 +262,19 @@
           <div class="social-networks">
             <ul>
               <li>
-                <a href="#" class="social-button" aria-label="Фейсбук"></a>
+                <a href="#" class="social-button"><span class="visually-hidden">Фейсбук</span></a>
               </li>
               <li>
-                <a href="#" class="social-button" aria-label="Инстаграм"></a>
+                <a href="#" class="social-button"><span class="visually-hidden">Инстаграм</span></a>
               </li>
               <li>
-                <a href="#" class="social-button" aria-label="Твиттер"></a>
+                <a href="#" class="social-button"><span class="visually-hidden">Твиттер</span></a>
               </li>
             </ul>
           </div>
         </div>
         <div class="footer-colls">
-          <div class="user-activity">
+          <div class="footer-user-activity">
             <ul class="user-activity-list">
               <li class="user-activity-item">
                 <a href="#">Войти</a>
@@ -293,7 +290,7 @@
           <span class="phone">
             <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
           </span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="creator">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="creator"><span class="visually-hidden">HTML Academy<span></a>
         </div>
       </div>
     </footer>
