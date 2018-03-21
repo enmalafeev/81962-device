@@ -89,8 +89,7 @@ input[type="radio"].visually-hidden {
 .main-header {
   width: 1160px;
   padding: 0 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 40px;
   display: flex;
@@ -128,6 +127,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 0.01em;
+  margin-bottom: 45px;
 }
 
 .header-bottom {
@@ -146,6 +146,8 @@ input[type="radio"].visually-hidden {
 
 .search-form {
   width: 440px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-input {
@@ -154,21 +156,40 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   padding-left: 30px;
-  padding-bottom: 15px;
-}
-
-.search-input::input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  padding-bottom: 10px;
 }
 
 .search-input:focus {
+  width: 335px;
   border-bottom: 2px solid black;
 }
 
 .btn-search {
+  display: none;
+  
+  font-family: 'open_sanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  
   background-color: transparent;
-  padding: 20px;
+  line-height: 48px;
+  padding: 0 20px;
   border: 2px solid black;
+}
+
+.btn-search:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-search:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input:focus + .btn-search {
+  display: block;
 }
 
 .user-activity {
@@ -178,22 +199,21 @@ input[type="radio"].visually-hidden {
 .user-activity-list {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
   
   padding: 0;
   margin: 0;
 }
 
-.user-activity-item {
+.user-activity-link {
   padding-left: 25px;
 }
 
-.user-activity-item:nth-child(2) {
-  margin-left: 220px;
+.user-activity-item:first-child {
+  margin-right: auto;
 }
 
-.user-activity-item:nth-child(3) {
-  margin-left: auto;
+.user-activity-item + .user-activity-item {
+  margin-left: 35px;
 }
 
 .user-activity-list,
@@ -232,13 +252,13 @@ input[type="radio"].visually-hidden {
 .main-menu a:focus,
 .catalog-menu a:hover,
 .catalog-menu a:focus {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .user-activity a:active,
 .main-menu a:active,
 .catalog-menu a:active {
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
   }
 
 .main-menu-list {
@@ -251,7 +271,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-menu-item:first-child {
-  width: 540px;
+  width: calc(100% - 500px);
 }
 
 .main-menu-item:nth-child(2) {
@@ -261,11 +281,6 @@ input[type="radio"].visually-hidden {
 .main-menu-item:last-child {
   margin-left: auto;
 }
-
-
-
-
-
 /* HEADER END */
 
 /* MAIN START */
@@ -321,13 +336,25 @@ input[type="radio"].visually-hidden {
 
 .categories-list li {
   list-style: none;
+  width: 160px;
+  height: 160px;
+  background-color: #f0c52e;
+}
+
+.categories-list img {
+
+}
+
+.categories-list strong {
+  display: block;
 }
 
 .categories-list a {
   color: #000000;
 }
+
 .categories-list a:active {
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 
 .services {
@@ -409,19 +436,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 65px;
 }
 
-/*.footer-colls:nth-child(1) {
-  width: 260px;
-  margin-right: auto;
-}*/
-
-/*.footer-colls:nth-child(2) {
-  width: 440px;
-}
-
-.footer-colls:nth-child(3) {
-  width: 360px;
-}*/
-
 .main-footer a {
   color: #ffffff;
 }
@@ -481,20 +495,35 @@ input[type="radio"].visually-hidden {
   line-height: 35px;
   font-weight: 300;
   
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+  opacity: 0.7;
 }
 
 .footer-user-activity a:hover, 
 .footer-user-activity a:focus {
-  color: rgba(255, 255, 255, 1);
+    opacity: 1;
 }
 
 .footer-user-activity a:active {
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
 }
 
-.main-footer .user-activity-list{
-  width: 330px;
+.login-orange {
+  background-image: url('../img/user-orange.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.compare-orange {
+  background-image: url('../img/compare-orange.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.cart-orange {
+  background-image: url('../img/cart-orange.svg');
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .phone {
@@ -502,6 +531,8 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   line-height: 30px;
   font-style: normal;
+  text-align: right;
+  
 }
 
 .phone a {
