@@ -522,7 +522,8 @@ input[type="radio"].visually-hidden {
 .menu-list {
   display: flex;
   justify-content: space-between;
-
+  width: 440px;
+  
   padding: 0;
   margin: 0;
 }
@@ -535,6 +536,44 @@ input[type="radio"].visually-hidden {
 .menu-list a {
   letter-spacing: 0.2em;
 }
+
+.social-networks-list {
+  display: flex;
+  justify-content: space-around;
+  width: 160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-networks-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #7e7e7e;
+  border-radius: 50%;
+}
+
+.facebook {
+  background-image: url('../img/facebook.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instagram {
+  background-image: url('../img/instagram.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitter {
+  background-image: url('../img/twitter.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
 
 .main-footer .footer-user-activity a {
   font-family: 'open_sanslight', Arial, sans-serif;
