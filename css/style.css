@@ -295,6 +295,17 @@ input[type="radio"].visually-hidden {
 
 .main-menu-item:nth-child(2) {
   margin-right: 40px;
+  position: relative;
+}
+
+.main-menu-item:nth-child(2)::after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 7px;
+  background-color: #fff;
+  top: 95px;
+  left: 0;
 }
 
 .main-menu-item:last-child {
@@ -482,6 +493,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer address {
+  position: relative;
+
   font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -491,6 +504,17 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.main-footer address::before {
+  position: absolute;
+  top: 90px;
+  left: 0;
+
+  content: '';
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+}
+
 .main-footer li {
   list-style: none;
 }
@@ -498,7 +522,11 @@ input[type="radio"].visually-hidden {
 .menu-list {
   display: flex;
   justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
 }
+
 .menu-list a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -550,8 +578,6 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   line-height: 30px;
   font-style: normal;
-  text-align: right;
-  
 }
 
 .phone a {
