@@ -142,6 +142,9 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   letter-spacing: 0.01em;
   text-transform: none;
+
+  margin: 0;
+  padding: 0;
 }
 
 .search-form {
@@ -270,8 +273,24 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+.main-menu-link::before,
+.main-menu-link::after {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: #b8a974;
+  top: 10px;
+  left: 230px;
+}
+
+.main-menu-link::after {
+  transform: rotate(90deg);
+}
+
 .main-menu-item:first-child {
   width: calc(100% - 500px);
+  position: relative;
 }
 
 .main-menu-item:nth-child(2) {
