@@ -312,21 +312,23 @@
       </div>
     </footer>
 <!-- МОДАЛКИ -->
-    <section class="modal-write-us">
+    <section class="modal write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback-item">
-          <label for="feedback-name">
-            Ваше имя:
-          </label>
-          <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="feedback-item">
-          <label for="feedback-email">
-            Ваш e-mail:
-          </label>
-          <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
-        </p>
+        <div class="feedback-inputs">
+          <p class="feedback-item">
+            <label for="feedback-name">
+              Ваше имя:
+            </label>
+            <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="feedback-item">
+            <label for="feedback-email">
+              Ваш e-mail:
+            </label>
+            <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+        </div>
         <p class="feedback-item">
           <label for="feedback-textarea">
             Текст письма:
@@ -338,10 +340,10 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-    <section class="modal-map">
-      <h2 class="visually-hiden">Как нас найти</h2>
-      <img src="#" width="960" height="560" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
-      <button class="btn close" type="button">Закрыть</button>
+    <section class="modal map">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <img src="img/map-big.jpg" width="960" height="560" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
   </body>

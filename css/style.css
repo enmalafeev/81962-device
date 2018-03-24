@@ -487,10 +487,12 @@ input[type="radio"].visually-hidden {
 }
 
 .brands-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 95px;
   list-style: none;
 }
 
@@ -517,6 +519,28 @@ input[type="radio"].visually-hidden {
 .contacts {
   width: 560px;
 }
+
+.about-us h2 {
+  position: relative;
+}
+
+.contacts h2 {
+  position: relative;
+}
+
+.about-us h2::before,
+.contacts h2::before {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  content: '';
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+}
+
+
+
 
 /* MAIN END */
 
@@ -735,25 +759,140 @@ input[type="radio"].visually-hidden {
 /* FOOTER END */
 
 /*MODAL START*/
+.modal {
+  position: fixed;
+} 
 
-.feedback-form input{
+.write-us {
+  display: none;
+
+  box-sizing: border-box;
+  top: 220px;
+  left: 50%;
+  width: 962px;
+  height: 554px;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  
+  margin-left: -481px;
+  padding: 95px 100px;
+}
+
+.map {
+  display: none;
+
+  top: 220px;
+  left: 50%;
+  width: 960px;
+  height: 560px;
+  
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  margin-left: -480px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  
+  width: 55px;
+  height: 55px;
+  
+  font-size: 0;
+  
+  cursor: pointer;
+  background-color: #f0c52e;
+  opacity: 0.5;
+  border: none;
+  border-radius: 50%;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+}
+
+.modal-close::before,
+.modal-close::after {
+  position: absolute;
+  top: 26px;
+  left: 11px;
+  
+  content: '';
+  width: 33px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.feedback-form { 
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-form p {
+  margin: 0;
+}
+
+.feedback-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-inputs p {
+  width: 360px;
+  margin-bottom: 35px;
+}
+
+.feedback-form label,
+.feedback-form input {
+  display: block;
+  margin-bottom: 10px;
+  
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  box-sizing: border-box;
+  width: 100%;
   font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-style: normal;
   
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+  opacity: 0.5;
   border: none;
+  padding: 10px 20px;
 }
 
 .feedback-form input:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
-.feedback-form input:focus {
+.feedback-form input:focus,
+.feedback-form textarea:focus {
   background-color: #ffffff;
   border: 2px solid #f7e296;
   outline: none; /* вернуть позже и сделать доступным */
+}
+
+.feedback-form textarea {
+  width: 100%;
+  height: 155px;
+  margin-bottom: 40px;
 }
 
 
