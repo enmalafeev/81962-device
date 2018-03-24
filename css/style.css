@@ -480,7 +480,10 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer .logo-yellow {
+  display: block;
   color: #ffc600;
+  position: static;
+  margin-bottom: 30px;
 }
 
 .main-footer .logo-yellow:hover,
@@ -501,12 +504,12 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   font-style: normal;
   
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .main-footer address::before {
   position: absolute;
-  top: 90px;
+  top: 105px;
   left: 0;
 
   content: '';
@@ -526,6 +529,8 @@ input[type="radio"].visually-hidden {
   
   padding: 0;
   margin: 0;
+  padding-top: 80px;
+  margin-bottom: 65px;
 }
 
 .menu-list a {
@@ -551,6 +556,16 @@ input[type="radio"].visually-hidden {
   height: 32px;
   background-color: #7e7e7e;
   border-radius: 50%;
+  opacity: 0.3;
+}
+
+.social-networks-link:hover,
+.social-networks-link:focus {
+  opacity: 0.6;
+}
+
+.social-networks-link:active {
+  opacity: 0.1;
 }
 
 .facebook {
@@ -571,11 +586,11 @@ input[type="radio"].visually-hidden {
   background-position: center;
 }
 
+.footer-user-activity .user-activity-list {
+  margin-bottom: 40px;
+}
 
-
-
-
-.main-footer .footer-user-activity a {
+.footer-user-activity a {
   font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 35px;
@@ -613,14 +628,40 @@ input[type="radio"].visually-hidden {
 }
 
 .phone {
+  display: inline-block;
   font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-style: normal;
+  margin-bottom: 65px;
 }
 
 .phone a {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.creator {
+  display: block;
+  width: 27px;
+  height: 35px;
+  
+  margin-left: auto;
+  background-image: url('../img/logo-html.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.creator:hover,
+.creator:focus {
+  opacity: 0.6;
+}
+
+.creator:active {
+  opacity: 0.3;
+}
+
+.text-align-right {
+  text-align: right;
 }
 
 /* FOOTER END */
