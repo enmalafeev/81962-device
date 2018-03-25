@@ -434,13 +434,13 @@ input[type="radio"].visually-hidden {
 .categories-list {
   display: flex;
   justify-content: space-between;
+  
+  margin: 0;
+  padding: 0;
 }
 
 .categories-list li {
   list-style: none;
-  width: 160px;
-  height: 160px;
-  background-color: #f0c52e;
 }
 
 .categories-list strong {
@@ -448,6 +448,16 @@ input[type="radio"].visually-hidden {
 }
 
 .categories-list a {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  
+  background-color: rgba(240, 197, 46, 0.5);
   color: #000000;
 }
 
@@ -462,13 +472,59 @@ input[type="radio"].visually-hidden {
   margin-bottom: 95px;
 }
 
+.services .container {
+  padding-bottom: 145px;
+}
+
+.services-menu {
+  position: relative;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.services-menu::before {
+  position: absolute;
+  top: -80px;
+  left: 280px;
+  
+  content: '';
+  display: block;
+  width: 7px;
+  height: 320px;
+  background-color: #000000;
+}
+
+
 .services-menu li {
   list-style: none;
-
+  margin-bottom: 30px;
 }
+
 .services-menu a {
   color: #000000;
+  text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.services-content {
+  position: absolute;
+  width: 460px;
+  top: -75px;
+  left: 400px;
+}
+
+.services-content::before {
+  position: absolute;
+  top: 55px;
+  right: -255px;
+  
+  content: '';
+  width: 136px;
+  height: 164px;
+  background-image: url('../img/delivery.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .services-content h3{
@@ -476,6 +532,8 @@ input[type="radio"].visually-hidden {
   font-size: 48px;
   line-height: 48px;
   font-weight: 900;
+  
+  margin-bottom: 35px;
 }
 
 .services-desc {
@@ -484,6 +542,9 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 0.01em;
+  
+  margin: 0;
+  padding: 0;
 }
 
 .brands-list {
@@ -538,9 +599,6 @@ input[type="radio"].visually-hidden {
   height: 7px;
   background-color: #000000;
 }
-
-
-
 
 /* MAIN END */
 
