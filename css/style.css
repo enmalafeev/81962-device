@@ -863,7 +863,7 @@ input[type="radio"].visually-hidden {
   display: none;
 
   box-sizing: border-box;
-  top: 220px;
+  top: 120px;
   left: 50%;
   width: 962px;
   height: 554px;
@@ -878,7 +878,7 @@ input[type="radio"].visually-hidden {
 .map {
   display: none;
 
-  top: 220px;
+  top: 120px;
   left: 50%;
   width: 960px;
   height: 560px;
@@ -956,7 +956,6 @@ input[type="radio"].visually-hidden {
 .feedback-form input {
   display: block;
   margin-bottom: 10px;
-  
 }
 
 .feedback-form input,
@@ -990,6 +989,30 @@ input[type="radio"].visually-hidden {
   height: 155px;
   margin-bottom: 40px;
 }
+
+@keyframes bounce {
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}
+
+@keyframes shake {
+  0%,100% {transform: translateX(0);}
+  10%,30%,50%,70%,90% {transform: translateX(-10px);}
+  20%,40%,60%,80% {transform: translateX(10px);}
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+
 
 
 /*MODAL END*/
@@ -1139,8 +1162,6 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   color: #464646;
 }
-
-
 
 .pagination {
   font-size: 16px;
