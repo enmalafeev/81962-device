@@ -13,22 +13,19 @@
       <a href="index.html" class="logo">Device</a>
       <div class="header-top">
         <form action="get" class="search-form">
-          <input type="text" id="search-input">
-          <label for="search-input">
-            Поиск по сайту
-          </label>
-          <button type="submit" class="btn">Найти</button>
+          <input type="text" class="search-input" placeholder="Поиск по сайту">
+          <button type="submit" class="btn btn-search">Найти</button>
         </form>
         <div class="user-activity">
           <ul class="user-activity-list">
-            <li class="user-activity-item">
-              <a href="#">Войти</a>
+            <li class="user-activity-item ">
+              <a href="#" class="user-activity-link login">Войти</a>
             </li>
             <li class="user-activity-item">
-              <a href="#">Сравнить</a>
+              <a href="#" class="user-activity-link compare">Сравнить</a>
             </li>
             <li class="user-activity-item">
-              <a href="#">Корзина</a>
+              <a href="#" class="user-activity-link cart">Корзина</a>
             </li>
           </ul>
         </div>
@@ -36,8 +33,8 @@
       <div class="header-bottom">
         <nav class="main-menu">
           <ul class="main-menu-list">
-            <li>
-              <a href="#">Каталог товаров</a>
+            <li class="main-menu-item">
+              <a href="#" class="main-menu-link">Каталог товаров</a>
               <ul class="catalog-menu">
                 <li>
                   <a href="#">Виртуальная реальность</a>
@@ -59,13 +56,13 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="main-menu-item">
               <a href="#">Доставка</a>
             </li>
-            <li>
+            <li class="main-menu-item">
               <a href="#">Гарантия</a>
             </li>
-            <li>
+            <li class="main-menu-item">
               <a href="#">Контакты</a>
             </li>
           </ul>
@@ -228,6 +225,7 @@
       
     </main>
 
+    
     <footer class="main-footer">
       <div class="container">
         <div class="footer-colls">
@@ -243,37 +241,37 @@
             <li><a href="#">Контакты</a></li>
           </ul>
           <div class="social-networks">
-            <ul>
-              <li>
-                <a href="#" class="social-button"><span class="visually-hidden">Фейсбук</span></a>
+            <ul class="social-networks-list">
+              <li class="social-networks-item">
+                <a href="#" class="social-networks-link facebook"><span class="visually-hidden">Фейсбук</span></a>
               </li>
-              <li>
-                <a href="#" class="social-button"><span class="visually-hidden">Инстаграм</span></a>
+              <li class="social-networks-item">
+                <a href="#" class="social-networks-link instagram"><span class="visually-hidden">Инстаграм</span></a>
               </li>
-              <li>
-                <a href="#" class="social-button"><span class="visually-hidden">Твиттер</span></a>
+              <li class="social-networks-item">
+                <a href="#" class="social-networks-link twitter"><span class="visually-hidden">Твиттер</span></a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="footer-colls">
-          <div class="user-activity">
+        <div class="footer-colls text-align-right">
+          <div class="footer-user-activity">
             <ul class="user-activity-list">
               <li class="user-activity-item">
-                <a href="#">Войти</a>
+                <a href="#" class="user-activity-link login-orange">Войти</a>
               </li>
               <li class="user-activity-item">
-                <a href="#">Сравнить</a>
+                <a href="#" class="user-activity-link compare-orange">Сравнить</a>
               </li>
               <li class="user-activity-item">
-                <a href="#">Корзина</a>
+                <a href="#" class="user-activity-link cart-orange">Корзина</a>
               </li>
             </ul>
           </div>
           <span class="phone">
             <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
           </span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="creator">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="creator"><span class="visually-hidden">HTML Academy<span></a>
         </div>
       </div>
     </footer>
