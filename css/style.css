@@ -338,7 +338,18 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 560px;
   background-color: #f7e296;
+}
+
+.catalog-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 35px;
+  padding-bottom: 40px;
 }
 
 .catalog-menu:hover {
