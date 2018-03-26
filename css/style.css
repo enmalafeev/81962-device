@@ -84,6 +84,7 @@ input[type="radio"].visually-hidden {
   padding-right: 25px;
   
   border: none;
+  cursor: pointer;
 }
 
 .btn:not(.btn-search):before {
@@ -179,21 +180,28 @@ input[type="radio"].visually-hidden {
   border: none;
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
+  background-position: left center;
   padding-left: 30px;
-  padding-bottom: 10px;
+  height: 50px;
+  border-bottom: 2px solid transparent;
+  transition: max-width 1.75s, border 0.3s;
+  width: auto;
 }
 
 .search-input:focus {
   width: 335px;
-  border-bottom: 2px solid black;
+  border-color: #000000;
 }
 
 .search-input::placeholder {
   opacity: 0.3;
+  color: #000000;
+  transition: 0.3s;
 }
 
 .btn-search {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   
   font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
@@ -205,6 +213,7 @@ input[type="radio"].visually-hidden {
   line-height: 48px;
   padding: 0 20px;
   border: 2px solid black;
+  transition: 0.3s;
 }
 
 .btn-search:hover {
@@ -217,7 +226,8 @@ input[type="radio"].visually-hidden {
 }
 
 .search-input:focus + .btn-search {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .user-activity {
@@ -342,6 +352,18 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 560px;
   background-color: #f7e296;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.catalog-menu:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-menu-link:hover + .catalog-menu {
+  opacity: 1;
+  visibility: visible;
 }
 
 .catalog-menu ul {
@@ -480,20 +502,33 @@ input[type="radio"].visually-hidden {
 
 .categories-list a {
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  
+  position: relative;
   width: 160px;
   height: 160px;
   
   background-color: rgba(240, 197, 46, 0.5);
+  
   color: #000000;
+}
+
+.categories-list a:hover,
+.categories-list a:focus {
+  background-color: #f0c52e;
 }
 
 .categories-list a:active {
   opacity: 0.3;
+}
+
+.categories-list strong {
+  display: block;
+  position: absolute;
+  top: calc(100% + 35px);
+  left: 0;
 }
 
 .services {
