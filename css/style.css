@@ -413,7 +413,7 @@ input[type="radio"].visually-hidden {
 .slider-list {
   margin: 0;
   padding: 0;
-}
+} 
 
 .slider-list li {
   list-style: none;
@@ -422,6 +422,17 @@ input[type="radio"].visually-hidden {
 .slider-item {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.slider-item::after {
+  position: absolute;
+  top: -85px;
+  right: -10px;
+  
+  content: '01';
+  font-size: 180px;
+  color: #ffffff;
 }
 
 .slider-item img {
