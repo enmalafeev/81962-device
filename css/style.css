@@ -410,13 +410,14 @@ input[type="radio"].visually-hidden {
   top: 340px;
   right: 8px;
   
-  list-style: none;
   margin: 0;
   padding: 0;
+  
+  z-index: 5;
 }
 
 .slider-checker-link {
-  display: block;
+  display: inline-block;
   width: 12px;
   height: 12px;
   border: 1px solid black;
@@ -438,14 +439,51 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   position: relative;
+  width: 100%;
+  
+  visibility: hidden;
 }
 
-.slider-item::after {
+.slider-item + .slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.active {
+  visibility: visible;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.slide-1::after {
   position: absolute;
   top: 80px;
   right: -10px;
   
   content: '01';
+  font-size: 180px;
+  color: #ffffff;
+}
+
+.slide-2::after {
+  position: absolute;
+  top: 80px;
+  right: -10px;
+  
+  content: '02';
+  font-size: 180px;
+  color: #ffffff;
+}
+
+.slide-3::after {
+  position: absolute;
+  top: 80px;
+  right: -10px;
+  
+  content: '03';
   font-size: 180px;
   color: #ffffff;
 }
