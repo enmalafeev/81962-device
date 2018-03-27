@@ -60,6 +60,8 @@ function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("slider-item");
   var dots = document.getElementsByClassName("slider-checker-link");
+  var y = document.getElementsByClassName("services-content");
+  var checker = document.getElementsByClassName("services-menu-link");
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
@@ -68,7 +70,20 @@ function showDivs(n) {
   for (i = 0; i < dots.length; i++) {
      dots[i].className = dots[i].className.replace(" black", "");
   }
+
+  if (n > y.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = y.length}
+  for (i = 0; i < y.length; i++) {
+     y[i].className = y[i].className.replace(" active", "");;  
+  }
+  for (i = 0; i < checker.length; i++) {
+     checker[i].className = checker[i].className.replace(" black", "");
+  }
+
   x[slideIndex-1].className += " active";  
   dots[slideIndex-1].className += " black";
+
+  y[slideIndex-1].className += " active";  
+  checker[slideIndex-1].className += " black";
 }
 

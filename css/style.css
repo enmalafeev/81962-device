@@ -450,10 +450,6 @@ input[type="radio"].visually-hidden {
   left: 0;
 }
 
-.active {
-  visibility: visible;
-}
-
 .black {
   background-color: #000000;
 }
@@ -644,9 +640,11 @@ input[type="radio"].visually-hidden {
   width: 460px;
   top: -75px;
   left: 400px;
+  
+  visibility: hidden;
 }
 
-.services-content::before {
+.delivery::before {
   position: absolute;
   top: 55px;
   right: -255px;
@@ -657,6 +655,36 @@ input[type="radio"].visually-hidden {
   background-image: url('../img/delivery.svg');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.warranty::before {
+  position: absolute;
+  top: 55px;
+  right: -255px;
+  
+  content: '';
+  width: 171px;
+  height: 195px;
+  background-image: url('../img/warranty.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.credit::before {
+  position: absolute;
+  top: 55px;
+  right: -255px;
+  
+  content: '';
+  width: 156px;
+  height: 188px;
+  background-image: url('../img/credit.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.active {
+  visibility: visible;
 }
 
 .services-content h3{
