@@ -34,21 +34,15 @@
         <nav class="main-menu">
           <ul class="main-menu-list">
             <li class="main-menu-item">
-              <a href="#" class="main-menu-link">Каталог товаров</a>
+              <a href="catalog.html" class="main-menu-link">Каталог товаров</a>
               <ul class="catalog-menu">
                 <li>
                   <a href="#">Виртуальная реальность</a>
-                </li>
-                <li>
                   <a href="#">Моноподы для селфи</a>
-                </li>
-                <li>
                   <a href="#">Экшн-камеры</a>
                 </li>
                 <li>
                   <a href="#">Фитнес-браслеты</a>
-                </li>
-                <li>
                   <a href="#">Умные часы</a>
                 </li>
                 <li>
@@ -86,7 +80,13 @@
             <form class="filter-form">
               <div class="price">
                 <legend>Стоимость</legend>
-                <input type="range">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
               </div>
               <fieldset>
                 <legend>Цвет</legend>
@@ -138,7 +138,7 @@
                   </label>
                 </p>
               </fieldset>
-              <button class="btn" type="submit">Показать</button>
+              <button class="btn btn-show" type="submit">Показать</button>
             </form>
           </div>
           
