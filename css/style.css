@@ -1238,7 +1238,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-wrap {
-  width: 100%;
+  width: 970px;
   display: flex;
   flex-direction: column;
 }
@@ -1303,6 +1303,15 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.aside-filters h2 {
+  margin: 0;
+  
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 200px;
+  background-color: #dbdbdb;
+}
+
 .aside-filters h2,
 .sorting h2 {
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -1334,7 +1343,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px;
 }
 
-.price legend {
+.price-checker legend {
   padding-top: 15px;
   margin-top: 95px;
   margin-bottom: 40px;
@@ -1477,17 +1486,16 @@ input[type="radio"].visually-hidden {
   
 .filter-form input[type="radio"]:checked + label::after {
   content: "";
-  top: 10px;
-  left: 0px;
+  top: 18px;
+  left: 8px;
   
   position: absolute;
 
-  width: 25px;
-  height: 25px;
+  width: 9px;
+  height: 9px;
   
-  background-image: url("../img/radio-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  border-radius: 50%;
+  background-color: #000000;
 }
 
 .filter-form input[type="checkbox"] ~ label,
@@ -1505,11 +1513,34 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.2em;
 }
 
+.sorting {
+  display: flex;
+  justify-content: flex-start;
+  width: 760px;
+  
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 70px;
+  padding-right: 140px;
+}
+
+.sorting h2 {
+  margin: 0;
+  padding: 0;
+}
+
 .sorting-list {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  
   font-family: 'open_sansregular', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  
+  margin: auto;
+  padding: 0;
 }
 
 .sorting-list li {
@@ -1526,7 +1557,34 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list a:active {
+  margin-left: 50px;
   color: rgba(0, 0, 0, 1);
+}
+
+.sorting-btn {
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.sorting-btn:hover,
+.sorting-btn:focus {
+  opacity: 0.4;
+}
+
+.sorting-btn:active {
+  opacity: 1;
+}
+
+.btn-up {
+  margin-right: 15px;
+  background-image: url('../img/triangle-up.svg');
+}
+
+.btn-down {
+  background-image: url('../img/triangle-down.svg');
 }
 
 .catalog {
@@ -1540,27 +1598,77 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  
 }
 
-.catalog-list li {
+.catalog-item {
+  position: relative;
   width: 360px;
   margin-right: 40px;
   margin-bottom: 35px;
   list-style: none;
+  
+  overflow: hidden;
 }
 
-.catalog-list li:nth-child(2n) {
+.catalog-item-action {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 380px;
+  
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+}  
+
+.catalog-item:hover .catalog-item-action {
+  opacity: 1;
+}
+
+
+.catalog-item:nth-child(2n) {
   margin-right: 0;
 }
 
 .catalog-list h3 {
+  display: inline-block;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
 }
 
-.price {
+.catalog-list a {
+  color: #000000;
+}
+
+.btn-compare {
+  font-family: 'open_sanslight', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+  opacity: 0.5;
+}
+
+.btn-compare:hover,
+.btn-compare:focus {
+  opacity: 1;
+}
+
+.btn-compare:active {
+  opacity: 0.2;
+}
+
+.price {  
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1576,8 +1684,26 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  padding: 25px 30px;
+  
+  margin: 0;
+  margin-bottom: 78px;
+}
+
+.pagination-item:first-child {
+  margin-right: auto;
+}
+
+.pagination-item:last-child {
+  margin-left: auto;
+}
+
 .pagination-list li {
   list-style: none;
+  padding-right: 30px;
 }
 
 .pagination-list a {
