@@ -77,13 +77,13 @@ function showDivs(n) {
      y[i].className = y[i].className.replace(" active", "");;  
   }
   for (i = 0; i < checker.length; i++) {
-     checker[i].className = checker[i].className.replace(" black-link", "");
+     checker[i].className = checker[i].className.replace(" link-active", "");
   }
 
   x[slideIndex-1].className += " active";  
   dots[slideIndex-1].className += " black";
 
   y[slideIndex-1].className += " active";  
-  checker[slideIndex-1].className += " black-link";
+  checker[slideIndex-1].className += " link-active";
 }
 
