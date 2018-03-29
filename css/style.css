@@ -1562,12 +1562,15 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 400;
   
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
 }
 
 .sorting-list li {
   list-style: none;
+
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-list a {
@@ -1597,7 +1600,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
-.sorting-btn:active {
+.sorting-btn:active,
+.sorting-btn-current {
   opacity: 1;
 }
 
@@ -1710,7 +1714,7 @@ input[type="radio"].visually-hidden {
 
 .price {  
   min-width: 80px;
-  margin-left: 25px;
+  margin-left: 20px;
 
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 16px;
@@ -1731,28 +1735,54 @@ input[type="radio"].visually-hidden {
 .pagination-list {
   display: flex;
   justify-content: center;
-  padding: 25px 30px;
+  height: 70px;
+  line-height: 70px;
   
   margin: 0;
+  padding: 0;
   margin-bottom: 78px;
 }
 
+.pagination-link {
+  color: rgba(0, 0, 0, 0.3);
+}
+ 
 .pagination-item:first-child {
   margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .pagination-item:last-child {
   margin-left: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
+
+.pagination-link-active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-item:first-child:hover,
+.pagination-item:first-child:focus,
+.pagination-item:last-child:hover, 
+.pagination-item:last-child:focus {
+  background-color: #d9d9d9;
+}
+.pagination-link:first-child:active, 
+.pagination-link:last-child:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
 
 .pagination-list li {
   list-style: none;
   padding-right: 30px;
 }
 
-.pagination-list a {
-  color: #000000;
-}
+
 /*CATALOG PAGE END*/
 
 

@@ -8,7 +8,7 @@ var form = popup.querySelector("form");
 var login = popup.querySelector("[name = name]");
 var email = popup.querySelector("[name = email]");
 
-var storage = localStorage.getItem("user-name");
+var storage = localStorage.getItem("userName");
 
 link.addEventListener("click", function(event) {
 	event.preventDefault();
