@@ -1189,7 +1189,8 @@ input[type="radio"].visually-hidden {
   padding: 10px 20px;
 }
 
-.feedback-form input:hover {
+.feedback-form input:hover,
+.feedback-form textarea:hover {
   opacity: 1;
 }
 
@@ -1236,6 +1237,10 @@ input[type="radio"].visually-hidden {
 
 /*CATALOG PAGE START*/
 
+.catalog-page button {
+  cursor: pointer;
+}
+
 .container h1 {
   font-size: 48px;
   line-height: 48px;
@@ -1252,11 +1257,11 @@ input[type="radio"].visually-hidden {
 .aside-content {
   width: 200px;
   margin-right: 70px;
-  margin-left: auto;
+  margin-left: 180px;
 }
 
 .sorting-wrap {
-  width: 970px;
+  min-width: 970px;
   display: flex;
   flex-direction: column;
 }
@@ -1326,7 +1331,7 @@ input[type="radio"].visually-hidden {
   
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 200px;
+  padding-left: 180px;
   background-color: #dbdbdb;
 }
 
@@ -1622,11 +1627,16 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   list-style: none;
   
   overflow: hidden;
 }
+
+.catalog-item img {
+  margin-bottom: 30px;
+}
+
 
 .catalog-item-action {
   display: flex;
@@ -1647,6 +1657,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover .catalog-item-action {
   opacity: 1;
+  transition: 0.5s ease;
 }
 
 
@@ -1654,12 +1665,23 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
+.catalog-item-info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+}
+
+
 .catalog-list h3 {
   display: inline-block;
 
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
+
+  margin: 0;
 }
 
 .catalog-list a {
@@ -1687,11 +1709,15 @@ input[type="radio"].visually-hidden {
 }
 
 .price {  
+  min-width: 80px;
+  margin-left: 25px;
+
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
   color: #464646;
+  text-align: right;
 }
 
 .pagination {

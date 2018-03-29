@@ -8,10 +8,19 @@ var form = popup.querySelector("form");
 var login = popup.querySelector("[name = name]");
 var email = popup.querySelector("[name = email]");
 
+var storage = localStorage.getItem("user-name");
+
 link.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.add("modal-content-show");
-	login.focus();
+  login.focus();
+  if (storage) {
+    login.value = storage;
+  }
+  if (storage) {
+    login.value = storage;
+    password.focus();
+  }
 });
 
 mapLink.addEventListener("click", function(event) {
@@ -43,7 +52,6 @@ window.addEventListener("keydown", function(event) {
 		}
 	}
 });
-
 
 var slideIndex = 1;
 showDivs(slideIndex);
