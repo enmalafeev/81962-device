@@ -1488,7 +1488,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.filter-form legend {
+.filter-form legend,
+.filter-form h3 {
   width: 100%;
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 18px;
@@ -1506,13 +1507,14 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px;
 }
 
-.price-checker legend {
+.price-checker h3 {
   padding-top: 15px;
   margin-top: 95px;
   margin-bottom: 40px;
 }
 
 .range-controls {
+  display: block;
   position: relative;
   margin-bottom: 65px;
 }
