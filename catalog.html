@@ -12,8 +12,8 @@
     <header class="main-header">
       <a href="index.html" class="logo">Device</a>
       <div class="header-top">
-        <form action="get" class="search-form">
-          <input type="text" class="search-input" placeholder="Поиск по сайту">
+        <form action="search.php" method="get" class="search-form">
+          <input type="text" id="search-input" name="search" class="search-input" placeholder="Поиск по сайту">
           <button type="submit" class="btn btn-search">Найти</button>
         </form>
         <div class="user-activity">
@@ -91,32 +91,32 @@
               <fieldset>
                 <legend>Цвет</legend>
                 <p>
-                  <input id="color-black" type="checkbox">
-                  <label for="color-black">
+                  <input id="filter-color-black" name="color-black" type="checkbox">
+                  <label for="filter-color-black">
                     Черный
                   </label>
                 </p>
                 <p>
-                  <input id="color-white" type="checkbox">
-                  <label for="color-white">
+                  <input id="filter-color-white" name="color-white" type="checkbox">
+                  <label for="filter-color-white">
                     Белый
                   </label>
                 </p>
                 <p>
-                  <input id="color-blue" type="checkbox">
-                  <label for="color-blue">
+                  <input id="filter-color-blue" name="color-blue" type="checkbox">
+                  <label for="filter-color-blue">
                     Синий
                   </label>
                 </p>
                 <p>
-                  <input id="color-red" type="checkbox">
-                  <label for="color-red">
+                  <input id="filter-color-red" name="color-red" type="checkbox">
+                  <label for="filter-color-red">
                     Красный
                   </label>
                 </p>
                 <p>
-                  <input id="color-pink" type="checkbox">
-                  <label for="color-pink">
+                  <input id="filter-color-pink" name="color-pink" type="checkbox">
+                  <label for="filter-color-pink">
                     Розовый
                   </label>
                 </p>
@@ -126,14 +126,14 @@
                   Bluetooth
                 </legend>
                 <p>
-                  <input id="radio-yes" type="radio" name="bluetooth">
-                  <label for="radio-yes">
+                  <input id="filter-bluetooth-yes" name="bluetooth" type="radio" checked>
+                  <label for="filter-bluetooth-yes">
                     Есть
                   </label>
                 </p>
                 <p>
-                  <input id="radio-no" type="radio" name="bluetooth">
-                  <label for="radio-no">
+                  <input id="filter-bluetooth-no" name="bluetooth" type="radio">
+                  <label for="filter-bluetooth-no">
                     Нет
                   </label>
                 </p>
