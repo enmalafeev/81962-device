@@ -231,8 +231,8 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-top: 35px;
-  padding-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   margin-right: 60px;
 }
 
@@ -455,7 +455,7 @@ html {
   width: 100px;
   height: 7px;
   background-color: #fff;
-  top: 95px;
+  top: 112px;
   left: 0;
 }
 
@@ -481,8 +481,8 @@ html {
   justify-content: space-between;
   width: 80px;
   position: absolute;
-  top: 340px;
-  right: 8px;
+  top: 338px;
+  right: 61px;
   margin: 0;
   padding: 0;
   z-index: 5;
@@ -539,8 +539,8 @@ html {
 
 .slide-1::after {
   position: absolute;
-  top: 80px;
-  right: -10px;
+  top: 77px;
+  right: 27px;
   content: '01';
   font-size: 180px;
   color: #ffffff;
@@ -548,8 +548,8 @@ html {
 
 .slide-2::after {
   position: absolute;
-  top: 80px;
-  right: -10px;
+  top: 77px;
+  right: 27px;
   content: '02';
   font-size: 180px;
   color: #ffffff;
@@ -557,8 +557,8 @@ html {
 
 .slide-3::after {
   position: absolute;
-  top: 80px;
-  right: -10px;
+  top: 77px;
+  right: 27px;
   content: '03';
   font-size: 180px;
   color: #ffffff;
@@ -569,7 +569,7 @@ html {
 }
 
 .slider-info {
-  padding-top: 71px;
+  padding-top: 90px;
   width: 540px;
   z-index: 3;
 }
@@ -577,7 +577,7 @@ html {
 .slider-info a {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .slider-item h3 {
@@ -623,7 +623,7 @@ html {
 }
 
 .categories {
-  margin-bottom: 260px;
+  margin-bottom: 210px;
 }
 
 .categories-list {
@@ -683,7 +683,7 @@ html {
 .services {
   background-color: #e5e5e5;
   color: #000000;
-  margin-bottom: 95px;
+  margin-bottom: 105px;
 }
 
 .services .container {
@@ -733,8 +733,8 @@ html {
 
 .delivery::before {
   position: absolute;
-  top: 35px;
-  right: -255px;
+  top: 60px;
+  right: -215px;
   content: '';
   width: 136px;
   height: 164px;
@@ -887,12 +887,12 @@ html {
 
 .about-us h2,
 .contacts h2 {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .about-us p {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .contacts p {
@@ -921,13 +921,13 @@ html {
 .about-us .btn {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 .contacts a {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 /* MAIN END */
