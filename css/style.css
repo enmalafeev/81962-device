@@ -75,6 +75,7 @@ input[type="radio"].visually-hidden {
 
 .btn {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   z-index: 1;
   font: inherit;
@@ -487,6 +488,7 @@ input[type="radio"].visually-hidden {
 
 .slider-checker-link {
   display: inline-block;
+  vertical-align: top;
   width: 12px;
   height: 12px;
   border: 1px solid black;
@@ -572,6 +574,7 @@ input[type="radio"].visually-hidden {
 
 .slider-info a {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 55px;
 }
 
@@ -908,11 +911,13 @@ input[type="radio"].visually-hidden {
 
 .about-us .btn {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 90px;
 }
 
 .contacts a {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 80px;
 }
 
@@ -1102,6 +1107,7 @@ input[type="radio"].visually-hidden {
 
 .phone {
   display: inline-block;
+  vertical-align: top;
   font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -1854,6 +1860,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-list h3 {
   display: inline-block;
+  vertical-align: top;
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
