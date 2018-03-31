@@ -37,7 +37,7 @@
               <a class="main-menu-link">Каталог товаров</a>
               <ul class="catalog-menu">
                 <li>
-                  <a href="#">Виртуальная реальность</a>
+                  <a href="#" tabindex="0">Виртуальная реальность</a>
                   <a href="#">Моноподы для селфи</a>
                   <a href="#">Экшн-камеры</a>
                 </li>
@@ -84,8 +84,12 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
+                  <div class="range-toggle range-toggle-min" tabindex="0">
+                    <span class="range-toggle-price-min">от 0</span>
+                  </div>
+                  <div class="range-toggle range-toggle-max" tabindex="0">
+                    <span class="range-toggle-price-max">до 5000</span>
+                  </div>
                 </div>
               </div>
               <fieldset>
@@ -126,13 +130,13 @@
                   Bluetooth
                 </legend>
                 <p>
-                  <input id="filter-bluetooth-yes" name="bluetooth" type="radio" checked>
+                  <input id="filter-bluetooth-yes" name="bluetooth" value="bluetooth-on" type="radio" checked>
                   <label for="filter-bluetooth-yes">
                     Есть
                   </label>
                 </p>
                 <p>
-                  <input id="filter-bluetooth-no" name="bluetooth" type="radio">
+                  <input id="filter-bluetooth-no" name="bluetooth" value="bluetooth-off" type="radio">
                   <label for="filter-bluetooth-no">
                     Нет
                   </label>
@@ -179,7 +183,9 @@
                   <a href="#" class="btn-compare">Добавить к сравнению</a>
                 </div>
                 <div class="catalog-item-info">
-                  <h3>Профессиональная селфи-палка</h3>
+                  <a href="#" class="catalog-item-link">
+                    <h3>Профессиональная селфи-палка</h3>
+                  </a>
                   <span class="price">
                     500 руб.
                   </span>
@@ -192,20 +198,24 @@
                   <a href="#" class="btn-compare">Добавить к сравнению</a>
                 </div>
                 <div class="catalog-item-info">
-                  <h3>Непотопляемая селфи-палка</h3>
+                  <a href="#" class="catalog-item-link">
+                    <h3>Непотопляемая селфи-палка</h3>
+                  </a>
                   <span class="price">
                     2500 руб.
                   </span>
                 </div>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item product-new">
                 <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
                 <div class="catalog-item-action">
                   <a href="#" class="btn">В корзину</a>
                   <a href="#" class="btn-compare">Добавить к сравнению</a>
                 </div>
                 <div class="catalog-item-info">
-                  <h3>Селфи-палка "Следуй за мной"</h3>
+                  <a href="#" class="catalog-item-link">
+                    <h3>Селфи-палка "Следуй за мной"</h3>
+                  </a>  
                   <span class="price">
                     4900 руб.
                   </span>

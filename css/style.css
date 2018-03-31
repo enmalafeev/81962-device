@@ -134,7 +134,7 @@ html {
   width: 1160px;
   padding: 0 60px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,7 +149,7 @@ html {
 
 .logo {
   position: relative;
-  top: -23px;
+  top: -24px;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: 0.01em;
@@ -182,7 +182,7 @@ html {
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 0.01em;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 
 .header-bottom {
@@ -197,7 +197,7 @@ html {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  width: 1160px;
+  width: 1100px;
   position: relative;
   background-color: #f7e296;
   opacity: 0;
@@ -313,7 +313,7 @@ html {
   letter-spacing: 0.01em;
   text-transform: none;
   background-color: transparent;
-  line-height: 48px;
+  line-height: 46px;
   padding: 0 20px;
   border: 2px solid black;
   -webkit-transition: 0.3s;
@@ -469,7 +469,7 @@ html {
 
 .slider-wrap {
   position: relative;
-  top: -163px;
+  top: -160px;
 }
 
 .slider-checker {
@@ -569,8 +569,8 @@ html {
 }
 
 .slider-info {
-  padding-top: 90px;
-  width: 500px;
+  padding-top: 71px;
+  width: 540px;
   z-index: 3;
 }
 
@@ -1572,26 +1572,24 @@ html {
   left: 0;
 }
 
-.range-toggle-min::before {
+.range-toggle-price-min {
   width: 28px;
   height: 15px;
   position: absolute;
   top: 15px;
   left: 0;
-  content: 'от 0';
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.2);
 }
 
-.range-toggle-max::before {
+.range-toggle-price-max {
   width: 60px;
   height: 15px;
   position: absolute;
   top: 15px;
   left: -30px;
-  content: 'до 5000';
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -1688,7 +1686,9 @@ html {
 }
 
 .filter-form input[type="checkbox"]~label:hover,
-.filter-form input[type="radio"]~label:hover {
+.filter-form input[type="radio"]~label:hover,
+.filter-form input[type="checkbox"]~label:active,
+.filter-form input[type="radio"]~label:active {
   opacity: 0.6;
 }
 
@@ -1869,6 +1869,32 @@ html {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+}
+
+.product-new::before {
+  position: absolute;
+  top: 29px;
+  right: 27px;
+  
+  content: 'new';
+  font-family: 'gilroyextrabold', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.2;
+
+  display: block;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  
+  border: 3px solid #a6a6a6;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  
 }
 
 .catalog-list h3 {

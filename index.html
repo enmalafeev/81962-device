@@ -36,7 +36,7 @@
             <li class="main-menu-item">
               <a href="catalog.html" class="main-menu-link">Каталог товаров</a>
               <ul class="catalog-menu">
-                <li>
+                <li> 
                   <a href="catalog.html">Виртуальная реальность</a>
                   <a href="catalog.html">Моноподы для селфи</a>
                   <a href="catalog.html">Экшн-камеры</a>
@@ -71,18 +71,24 @@
         <div class="slider-wrap">
           <div class="slider-checker">
             
-              <a class="slider-checker-link" onclick="currentDiv(1)"></a>
+              <a class="slider-checker-link" onclick="currentDiv(1)" tabindex="0">
+                <span class="visually-hidden">Самый популярный товар №1</span>
+              </a>
             
-              <a class="slider-checker-link" onclick="currentDiv(2)"></a>
+              <a class="slider-checker-link" onclick="currentDiv(2)" tabindex="0">
+                <span class="visually-hidden">Самый популярный товар №2</span>
+              </a>
           
-              <a class="slider-checker-link" onclick="currentDiv(3)"></a>
+              <a class="slider-checker-link" onclick="currentDiv(3)" tabindex="0">
+                <span class="visually-hidden">Самый популярный товар №3</span>
+              </a>
            
           </div>
           <ul class="slider-list">
             <li class="slider-item slide-1">
               <img src="img/slider-1.png" width="385" height="485" alt="Селфи-палка">
               <div class="slider-info">
-                <h3>Делай селфи, как Бен Стиллер!</h3>
+                <h3>Делай селфи,<br> как Бен Стиллер!</h3>
                 <p class="slider-desc">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
                 <a href="#" class="btn">Подробнее</a>
@@ -177,7 +183,7 @@
         <div class="container">
           <ul class="services-menu">
             <li class="services-menu-item">
-              <a class="btn services-menu-link" onclick="currentDiv(1)">Доставка</a>
+              <a class="btn services-menu-link" onclick="currentDiv(1)" tabindex="0">Доставка</a>
               <div class="services-content delivery">
                 <h3>Доставка</h3>
                 <p class="services-desc">
@@ -187,7 +193,7 @@
               </div>
             </li>
             <li class="services-menu-item">
-              <a class="btn services-menu-link" onclick="currentDiv(2)">Гарантия</a>
+              <a class="btn services-menu-link" onclick="currentDiv(2)" tabindex="0">Гарантия</a>
               <div class="services-content warranty">
                 <h3>Гарантия</h3>
                 <p class="services-desc">
@@ -197,7 +203,7 @@
               </div>
             </li>
             <li class="services-menu-item">
-              <a class="btn services-menu-link" onclick="currentDiv(3)">Кредит</a>
+              <a class="btn services-menu-link" onclick="currentDiv(3)" tabindex="0">Кредит</a>
               <div class="services-content credit">
                 <h3>Кредит</h3>
                 <p class="services-desc">
@@ -249,10 +255,10 @@
           <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a href="#" class="map-link">
+            <a href="map.html" class="map-link">
               <img src="img/map.jpg" alt="Как нас найти" width="560" height="222" class="minimap">
             </a>
-            <a href="#" class="btn btn-write-us">Напишите нам</a>
+            <a href="writeus.html" class="btn btn-write-us">Напишите нам</a>
           </section>
         </div>  
       </div>
