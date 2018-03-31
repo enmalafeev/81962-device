@@ -900,6 +900,13 @@ html {
   margin-bottom: 45px;
 }
 
+.map-link {
+  display: block;
+  width: 560px;
+  height: 222px;
+  background-color: #eeeeee;
+}
+
 .about-us ul {
   margin: 0;
   padding-left: 35px;
@@ -1806,6 +1813,10 @@ html {
 }
 
 .catalog-item img {
+  display: block;
+  height: 380px;
+  
+  background-color: #eeeeee;
   margin-bottom: 30px;
 }
 
