@@ -68,7 +68,7 @@
     </header>
 
     <main class="main-container">
-      <div class="container">
+      <div class="catalog-container">
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li><a href="#">Главная</a></li>
@@ -78,7 +78,9 @@
       </div>
       <div class="catalog-wrap">
         <aside class="aside-filters">
-          <h2>Фильтр:</h2>
+          <div class="aside-header">
+            <h2>Фильтр:</h2>
+          </div>
           <div class="aside-content">
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="price-checker">
@@ -151,16 +153,18 @@
           
         </aside>
         <div class="sorting-wrap">
-          <section class="sorting">
-            <h2>Сортировка:</h2>
-            <ul class="sorting-list">
-              <li><a href="#" class="sorting-link sorting-link-current">По цене</a></li>
-              <li><a href="#" class="sorting-link">По типу</a></li>
-              <li><a href="#" class="sorting-link">По популярности</a></li>
-            </ul>
-            <button class="sorting-btn btn-up"><span class="visually-hidden">Вверх</span></button>
-            <button class="sorting-btn sorting-btn-current btn-down"><span class="visually-hidden">Вниз</span></button>
-          </section>
+          <div class="sorting-header">
+            <section class="sorting">
+              <h2>Сортировка:</h2>
+              <ul class="sorting-list">
+                <li><a href="#" class="sorting-link sorting-link-current">По цене</a></li>
+                <li><a href="#" class="sorting-link">По типу</a></li>
+                <li><a href="#" class="sorting-link">По популярности</a></li>
+              </ul>
+              <button class="sorting-btn btn-up"><span class="visually-hidden">Вверх</span></button>
+              <button class="sorting-btn sorting-btn-current btn-down"><span class="visually-hidden">Вниз</span></button>
+            </section>
+          </div>
           <section class="catalog">
             <h2 class="visually-hidden">Каталог товаров</h2>
             <ul class="catalog-list">
