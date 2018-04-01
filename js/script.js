@@ -13,14 +13,14 @@ var storage = localStorage.getItem("userName");
 link.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.add("modal-content-show");
-  login.focus();
-  if (storage) {
-    login.value = storage;
-  }
-  if (storage) {
-    login.value = storage;
-    password.focus();
-  }
+	  login.focus();
+	  if (storage) {
+	    login.value = storage;
+	  }
+	  if (storage) {
+	    login.value = storage;
+	    password.focus();
+	  }
 });
 
 mapLink.addEventListener("click", function(event) {
@@ -38,13 +38,15 @@ for (var i = 0; i < close.length; i++) {
 
 form.addEventListener("submit", function(event) {
 	event.preventDefault();
-	if (!name.value && !email.value) {
+	if (!name.value || !email.value) {
 		popup.classList.add("modal-error");
 	}
 });
 
 window.addEventListener("keydown", function(event) {
 	if (event.keyCode === 27) {
+		event.preventDefault();
+		
 		if (popup.classList.contains("modal-content-show") || 
 			mapPopup.classList.contains("modal-content-show")) {
 			popup.classList.remove("modal-content-show");
