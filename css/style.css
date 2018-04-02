@@ -1439,7 +1439,6 @@ html {
 }
 
 .aside-filters {
-  width: 470px;
   font-family: 'open_sanslight', Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
@@ -1459,7 +1458,6 @@ html {
 }
 
 .sorting-wrap {
-  min-width: 970px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1558,12 +1556,6 @@ html {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-
-.sorting-header {
-  
-}
-
-
 
 .filter-form legend,
 .filter-form h3 {
