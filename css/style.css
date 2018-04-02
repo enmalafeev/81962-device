@@ -579,6 +579,8 @@ html {
 }
 
 .slider-info {
+  position: relative;
+  z-index: 3;
   padding-top: 90px;
   width: 565px;
   z-index: 3;
