@@ -185,6 +185,9 @@ html {
   font-weight: 300;
   letter-spacing: 0.01em;
   margin-bottom: 15px;
+  
+  position: relative;
+  top: -15px;
 }
 
 .header-bottom {
@@ -352,6 +355,9 @@ html {
   justify-content: flex-start;
   padding: 0;
   margin: 0;
+  
+  height: 50px;
+  line-height: 50px;
 }
 
 .user-activity-link {
@@ -655,7 +661,7 @@ html {
 
 .categories-list strong {
   display: block;
-}
+} 
 
 .categories-list a {
   display: -webkit-box;
@@ -683,6 +689,11 @@ html {
 
 .categories-list a:active {
   opacity: 0.3;
+}
+
+.categories-list .categories-img-bottom {
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
 }
 
 .categories-list strong {
@@ -904,7 +915,7 @@ html {
 
 .about-us p {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .contacts p {
@@ -922,7 +933,7 @@ html {
 .about-us ul {
   margin: 0;
   padding-left: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   list-style: circle;
 }
 
@@ -952,15 +963,15 @@ html {
 }
 
 .main-footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-top: 65px;
-  padding-bottom: 65px;
-  margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 65px;
+    margin: 0 auto;
 }
 
 .main-footer a {
@@ -980,7 +991,7 @@ html {
   display: block;
   color: #ffc600;
   position: static;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .main-footer .logo-yellow:hover,
@@ -1420,6 +1431,8 @@ html {
 .catalog-container h1 {
   font-size: 48px;
   line-height: 48px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .catalog-container {
@@ -1436,6 +1449,24 @@ html {
   background: -webkit-linear-gradient(top,rgba(0,0,0,.08),rgba(0,0,0,.08) 75px,#fff 70px ,#fff 100%);
   background: -o-linear-gradient(top,rgba(0,0,0,.08),rgba(0,0,0,.08) 75px,#fff 70px ,#fff 100%);
   background: linear-gradient(to bottom,rgba(0,0,0,.08),rgba(0,0,0,.08) 75px,#fff 70px ,#fff 100%);
+}
+
+.header-bottom-catalog {
+  padding-bottom: 50px;
+}
+
+.catalog-menu-small {
+  position: absolute;
+  top: 100%;
+  left: -60px;
+  max-height: 300px;
+  width: 1160px;
+  padding-left: 60px;
+}
+
+.main-menu-link:hover+.catalog-menu-small {
+  max-height: 300px;
+  width: 1160px;
 }
 
 .aside-filters {
@@ -1491,7 +1522,7 @@ html {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .breadcrumbs li {
@@ -1565,8 +1596,8 @@ html {
   line-height: 24px;
   font-weight: 900;
   border-top: 2px solid black;
-  padding-top: 15px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 14px;
 }
 
 .filter-form fieldset {
@@ -1577,15 +1608,15 @@ html {
 }
 
 .price-checker h3 {
-  padding-top: 15px;
-  margin-top: 95px;
-  margin-bottom: 40px;
+  padding-top: 10px;
+  margin-top: 65px;
+  margin-bottom: 9px;
 }
 
 .range-controls {
   display: block;
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 80px;
 }
 
 .range-toggle {
@@ -1681,7 +1712,8 @@ html {
           border-radius: 3px;
 }
 
-.filter-form input[type="checkbox"]:checked+label::before {
+.filter-form input[type="checkbox"]:checked+label::before,
+.filter-form input[type="checkbox"]~label:active:before {
   content: "";
   top: 10px;
   left: 2px;
@@ -1693,7 +1725,7 @@ html {
   background-position: center;
   border: none;
 }
-
+.filter-form input[type="radio"]:checked+label::before,
 .filter-form input[type="radio"]+label::before {
   position: absolute;
   -webkit-box-sizing: border-box;
@@ -1724,16 +1756,31 @@ html {
 }
 
 .filter-form input[type="checkbox"]~label:hover,
-.filter-form input[type="radio"]~label:hover,
+.filter-form input[type="radio"]~label:hover {
+  opacity: 0.6;
+}
+
 .filter-form input[type="checkbox"]~label:active,
 .filter-form input[type="radio"]~label:active {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .filter-form input[type="checkbox"]:disabled~label,
 .filter-form input[type="radio"]:disabled~label {
   opacity: 0.25;
 }
+,
+.filter-form input[type="checkbox"]:checked+label:active::after {
+  content: none;
+}
+
+.filter-form input[type="checkbox"]:checked+label:active::before {
+  background-image: none;
+  border: 2px solid #000000;
+  width: 23px;
+  height: 23px;
+}
+
 
 .btn-show {
   width: 100%;
@@ -1849,7 +1896,7 @@ html {
   position: relative;
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   list-style: none;
   overflow: hidden;
 }
@@ -2001,7 +2048,7 @@ html {
   line-height: 70px;
   margin: 0;
   padding: 0;
-  margin-bottom: 78px;
+  margin-bottom: 62px;
 }
 
 .pagination-link {
