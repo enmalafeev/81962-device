@@ -1701,10 +1701,6 @@ html {
   user-select: none;
 }
 
-.filter-form input[type="checkbox"],
-.filter-form input[type="radio"] {
-  display: none;
-}
 
 .filter-form input[type="checkbox"]+label::before {
   position: absolute;
@@ -1784,6 +1780,14 @@ html {
   border: 2px solid #000000;
   width: 23px;
   height: 23px;
+}
+
+.filter-form input[type="checkbox"]:focus+label,
+.filter-form input[type="radio"]:focus+label {
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-color: -webkit-focus-ring-color;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 
