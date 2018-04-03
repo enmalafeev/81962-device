@@ -1770,7 +1770,7 @@ html {
 .filter-form input[type="radio"]:disabled~label {
   opacity: 0.25;
 }
-,
+
 .filter-form input[type="checkbox"]:checked+label:active::after {
   content: none;
 }
