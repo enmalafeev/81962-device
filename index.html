@@ -69,19 +69,14 @@
       <section class="slider container">
         <h2 class="visually-hidden">Самые популярные товары</h2>
         <div class="slider-wrap">
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
           <div class="slider-checker">
-            
-              <a class="slider-checker-link" onclick="currentDiv(1)" tabindex="0">
-                <span class="visually-hidden">Самый популярный товар №1</span>
-              </a>
-            
-              <a class="slider-checker-link" onclick="currentDiv(2)" tabindex="0">
-                <span class="visually-hidden">Самый популярный товар №2</span>
-              </a>
           
-              <a class="slider-checker-link" onclick="currentDiv(3)" tabindex="0">
-                <span class="visually-hidden">Самый популярный товар №3</span>
-              </a>
+              <label class="slider-checker-item slider-checker-item--1" for="product-1"><span class="visually-hidden">Первый товар</span></label>
+              <label class="slider-checker-item slider-checker-item--2" for="product-2"><span class="visually-hidden">Второй товар</span></label>
+              <label class="slider-checker-item slider-checker-item--3" for="product-3"><span class="visually-hidden">Третий товар</span></label>
            
           </div>
           <ul class="slider-list">
@@ -350,7 +345,7 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
   
   </body>
 </html>

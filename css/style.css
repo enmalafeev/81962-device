@@ -507,11 +507,12 @@ html {
   z-index: 5;
 }
 
-.slider-checker-link {
+.slider-checker label {
+  position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border: 1px solid black;
   border-radius: 50%;
   cursor: pointer;
@@ -535,6 +536,7 @@ html {
   justify-content: space-between;
   position: relative;
   width: 100%;
+
   visibility: hidden;
 }
 
@@ -544,10 +546,38 @@ html {
   height: fit-content;
 }
 
-.slider-item+.slider-item {
+.slider-item +.slider-item {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#product-1:checked~.slider-list .slider-item:nth-child(1) {
+  visibility: visible;
+}
+
+#product-2:checked~.slider-list .slider-item:nth-child(2) {
+  visibility: visible;
+}
+
+#product-3:checked~.slider-list .slider-item:nth-child(3) {
+  visibility: visible;
+}
+
+#product-1:checked ~ .slider-checker .slider-checker-item--1::before,
+#product-2:checked ~ .slider-checker .slider-checker-item--2::before,
+#product-3:checked ~ .slider-checker .slider-checker-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 6;
+  width: 6px;
+  height:6px;
+  margin: -3px;
+  background-color: inherit;
+  border: 1px solid #000000;
+  border-radius: 50%;
 }
 
 .black {
@@ -794,9 +824,9 @@ html {
   background-position: center;
 }
 
-.active {
-  visibility: visible;
-}
+/* .active {
+  display: block;
+} */
 
 .link-active {
   width: 280px;
