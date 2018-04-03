@@ -500,8 +500,8 @@ html {
   justify-content: space-between;
   width: 80px;
   position: absolute;
-  top: 338px;
-  right: 81px;
+  top: 337px;
+  right: 83px;
   margin: 0;
   padding: 0;
   z-index: 5;
@@ -541,6 +541,9 @@ html {
 }
 
 .slider-item img {
+  position: relative;
+  top: 12px;
+  right: 15px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -633,7 +636,7 @@ html {
 
 .slider-item h3 {
   font-size: 48px;
-  line-height: 56px;
+  line-height: 57px;
   font-weight: 900;
   letter-spacing: 0.01em;
   color: #000000;
@@ -661,7 +664,7 @@ html {
 }
 
 .product-table td {
-  padding-right: 70px;
+  padding-right: 74px;
   padding-bottom: 10px;
 }
 
@@ -824,18 +827,31 @@ html {
   background-position: center;
 }
 
-/* .active {
-  display: block;
-} */
+#checker-1:checked ~ #delivery {
+  visibility: visible;  
+}
 
-.link-active {
+#checker-2:checked ~ #warranty {
+  visibility: visible;
+}
+
+#checker-3:checked ~ #credit {
+  visibility: visible;
+}
+
+
+#checker-1:checked ~ label[for="checker-1"],
+#checker-2:checked ~ label[for="checker-2"],
+#checker-3:checked ~ label[for="checker-3"] {
   width: 280px;
   background-color: #000;
   color: #f7e184;
   text-align: left;
 }
 
-.services-menu-link.link-active::before {
+#checker-1:checked ~ label[for="checker-1"]::before,
+#checker-2:checked ~ label[for="checker-2"]::before,
+#checker-3:checked ~ label[for="checker-3"]::before {
   content: none;
 }
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -178,8 +178,10 @@
         <div class="container">
           <ul class="services-menu">
             <li class="services-menu-item">
-              <a class="btn services-menu-link" onclick="currentDiv(1)" tabindex="0">Доставка</a>
-              <div class="services-content delivery">
+              <input class="visually-hidden" type="radio" id="checker-1" name="ul-toggle" checked>
+              <!-- <a class="btn services-menu-link" tabindex="0">Доставка</a> -->
+              <label for="checker-1" class="btn services-menu-link" tabindex="0">Доставка</label>
+              <div class="services-content delivery" id="delivery">
                 <h3>Доставка</h3>
                 <p class="services-desc">
                   Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
@@ -188,8 +190,10 @@
               </div>
             </li>
             <li class="services-menu-item">
-              <a class="btn services-menu-link" onclick="currentDiv(2)" tabindex="0">Гарантия</a>
-              <div class="services-content warranty">
+              <input class="visually-hidden" type="radio" id="checker-2" name="ul-toggle">
+              <!-- <a class="btn services-menu-link" tabindex="0">Гарантия</a> -->
+              <label for="checker-2" class="btn services-menu-link" tabindex="0">Гарантия</label>
+              <div class="services-content warranty" id="warranty">
                 <h3>Гарантия</h3>
                 <p class="services-desc">
                   Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно
@@ -198,8 +202,10 @@
               </div>
             </li>
             <li class="services-menu-item">
-              <a class="btn services-menu-link" onclick="currentDiv(3)" tabindex="0">Кредит</a>
-              <div class="services-content credit">
+              <input class="visually-hidden" type="radio" id="checker-3" name="ul-toggle">
+              <!-- <a class="btn services-menu-link" tabindex="0">Кредит</a> -->
+              <label for="checker-3" class="btn services-menu-link" tabindex="0">Кредит</label>
+              <div class="services-content credit" id="credit">
                 <h3>Кредит</h3>
                 <p class="services-desc">
                   Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные
