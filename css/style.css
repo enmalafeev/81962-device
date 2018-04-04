@@ -462,7 +462,7 @@ html {
 }
 
 .main-menu-item:nth-child(2) {
-  margin-right: 40px;
+  margin-right: 34px;
   position: relative;
 }
 
@@ -622,7 +622,7 @@ html {
 .slider-info {
   position: relative;
   z-index: 3;
-  padding: 90px 0 0 0;
+  padding: 91px 0 0 0;
   width: 562px;
   z-index: 3;
 }
@@ -741,7 +741,7 @@ html {
 .categories-list strong {
   display: block;
   position: absolute;
-  top: calc(100% + 35px);
+  top: calc(100% + 33px);
   left: 0;
 }
 
@@ -957,7 +957,7 @@ html {
 .about-us h2::before,
 .contacts h2::before {
   position: absolute;
-  top: -50px;
+  top: -52px;
   left: 0;
   content: '';
   width: 80px;
@@ -967,7 +967,7 @@ html {
 
 .about-us h2,
 .contacts h2 {
-  margin-bottom: 45px;
+  margin-bottom: 42px;
 }
 
 .about-us p {
@@ -976,7 +976,8 @@ html {
   font-weight: 300;
   line-height: 30px;
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
+  letter-spacing: .05px;
 }
 
 
@@ -997,27 +998,44 @@ html {
 }
 
 .about-us ul {
-  margin: 0;
-  padding-top: 13px;
-  padding-left: 35px;
-  margin-bottom: 44px;
-  list-style: circle;
+  margin: 73px 0 62px;
+  padding-left: 0;
+  list-style: none;
 }
 
 .about-us li {
-  padding-bottom: 17px;
+  margin-bottom: 17px;
+  padding-left: 35px;
+  letter-spacing: .2px;
+  font-size: 16px;
+}
+.about-us li:before{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  left: 0;
+  top: calc(50% - 4px);
 }
 
 .about-us .btn {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 84px;
+  letter-spacing: 3.3px;
 }
 
 .contacts a {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 70px;
+}
+
+.contacts .btn {
+  width: 260px;
+  margin-bottom: 81px;
 }
 
 /* MAIN END */
@@ -1062,7 +1080,7 @@ html {
   display: block;
   color: #ffc600;
   position: static;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .main-footer .logo-yellow:hover,
@@ -1082,6 +1100,7 @@ html {
   font-weight: 300;
   font-style: normal;
   color: rgba(255, 255, 255, 0.7);
+  letter-spacing: .06px;
 }
 
 .main-footer address::before {
@@ -1106,9 +1125,8 @@ html {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 440px;
-  padding: 0;
   margin: 0;
-  padding-top: 78px;
+  padding: 78px 0 0 6px;
   margin-bottom: 63px;
 }
 
@@ -1175,7 +1193,7 @@ html {
 .footer-user-activity .user-activity-list {
   line-height: 40px;
   height: 40px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .footer-user-activity a {
