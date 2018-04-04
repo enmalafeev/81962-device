@@ -652,7 +652,7 @@ html {
   font-weight: 300;
   letter-spacing: 0.01em;
   color: #000000;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .product-table tr {
@@ -972,8 +972,9 @@ html {
   font-weight: 300;
   line-height: 30px;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 29px;
 }
+
 
 .contacts p {
   font-family: 'open_sanslight', Arial, sans-serif;
@@ -981,7 +982,7 @@ html {
   font-weight: 300;
   line-height: 30px;
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 38px;
 }
 
 .map-link {
@@ -993,25 +994,26 @@ html {
 
 .about-us ul {
   margin: 0;
+  padding-top: 13px;
   padding-left: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   list-style: circle;
 }
 
 .about-us li {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 
 .about-us .btn {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 80px;
+  margin-bottom: 84px;
 }
 
 .contacts a {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 /* MAIN END */
@@ -1021,6 +1023,10 @@ html {
 .main-footer {
   background-color: #464646;
   color: #ffffff;
+}
+
+.footer-colls:nth-child(2) {
+  margin-left: 118px;
 }
 
 .main-footer .container {
@@ -1098,8 +1104,8 @@ html {
   width: 440px;
   padding: 0;
   margin: 0;
-  padding-top: 80px;
-  margin-bottom: 65px;
+  padding-top: 78px;
+  margin-bottom: 63px;
 }
 
 .menu-list a {
@@ -1158,8 +1164,14 @@ html {
   background-position: center;
 }
 
+.footer-user-activity {
+  width: 326px;
+}
+
 .footer-user-activity .user-activity-list {
-  margin-bottom: 40px;
+  line-height: 40px;
+  height: 40px;
+  margin-bottom: 32px;
 }
 
 .footer-user-activity a {
@@ -1205,7 +1217,7 @@ html {
   font-weight: 300;
   line-height: 30px;
   font-style: normal;
-  margin-bottom: 65px;
+  margin-bottom: 62px;
 }
 
 .phone a {
