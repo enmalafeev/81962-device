@@ -204,7 +204,7 @@ html {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  width: 1100px;
+  width: 1160px;
   position: relative;
   background-color: #f7e296;
   opacity: 0;
@@ -218,7 +218,7 @@ html {
   text-transform: none;
   margin: 0;
   padding: 0;
-  
+  left: -60px;
   padding-left: 60px;
 }
 
@@ -376,8 +376,7 @@ html {
 }
 
 .user-activity-list,
-.main-menu-list,
-.catalog-menu {
+.main-menu-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -501,7 +500,7 @@ html {
   width: 80px;
   position: absolute;
   top: 337px;
-  right: 83px;
+  right: 82px;
   margin: 0;
   padding: 0;
   z-index: 5;
@@ -543,7 +542,7 @@ html {
 .slider-item img {
   position: relative;
   top: 12px;
-  right: 15px;
+  right: 17px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -623,8 +622,8 @@ html {
 .slider-info {
   position: relative;
   z-index: 3;
-  padding-top: 90px;
-  width: 565px;
+  padding: 90px 0 0 0;
+  width: 562px;
   z-index: 3;
 }
 
@@ -632,16 +631,18 @@ html {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 50px;
+  width: 221px;
 }
 
 .slider-item h3 {
-  font-size: 48px;
-  line-height: 57px;
-  font-weight: 900;
-  letter-spacing: 0.01em;
-  color: #000000;
-  margin: 0;
-  padding: 0;
+    font-size: 48px;
+    font-weight: 900;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.18;
+    letter-spacing: .1px;
+    margin-bottom: 20px;
 }
 
 .slider-desc {
@@ -652,7 +653,8 @@ html {
   font-weight: 300;
   letter-spacing: 0.01em;
   color: #000000;
-  margin-bottom: 46px;
+  margin-bottom: 42px;
+  margin-top: 0;
 }
 
 .product-table tr {
@@ -680,6 +682,7 @@ html {
 
 .categories {
   margin-bottom: 262px;
+  padding-top: 2px;
 }
 
 .categories-list {
@@ -849,6 +852,7 @@ html {
   background-color: #000;
   color: #f7e184;
   text-align: left;
+  padding: 0 20px;
 }
 
 #checker-1:checked ~ label[for="checker-1"]::before,
