@@ -1519,6 +1519,25 @@ html {
 /*MODAL END*/
   
 /*CATALOG PAGE START*/
+.catalog-page .main-header{
+  margin-bottom: 37px;
+}
+.catalog-page .user-activity-item {
+  letter-spacing: .05px;
+}
+.catalog-page .user-activity-item:first-child {
+  margin-left: 0;
+  margin-right: 0;
+}
+.catalog-page .user-activity-item:nth-child(2) {
+  margin-left: 0;
+}
+.catalog-page .user-activity-item:last-of-type {
+  margin-left: auto;
+}
+.catalog-page .user-activity-item {
+  margin-left: 58px;
+}
 
 .catalog-page button {
   cursor: pointer;
@@ -1528,7 +1547,7 @@ html {
   font-size: 48px;
   line-height: 48px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .catalog-container {
@@ -1542,9 +1561,9 @@ html {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  background: -webkit-linear-gradient(top,rgba(0,0,0,.08),rgba(0,0,0,.08) 75px,#fff 70px ,#fff 100%);
-  background: -o-linear-gradient(top,rgba(0,0,0,.08),rgba(0,0,0,.08) 75px,#fff 70px ,#fff 100%);
-  background: linear-gradient(to bottom,rgba(0,0,0,.08),rgba(0,0,0,.08) 75px,#fff 70px ,#fff 100%);
+  background: -webkit-linear-gradient(top,rgba(0,0,0,.08),rgba(0,0,0,.08) 70px,#fff 70px ,#fff 100%);
+  background: -o-linear-gradient(top,rgba(0,0,0,.08),rgba(0,0,0,.08) 70px,#fff 70px ,#fff 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,.08),rgba(0,0,0,.08) 70px,#fff 70px ,#fff 100%);
 }
 
 .header-bottom-catalog {
@@ -1581,7 +1600,7 @@ html {
 .aside-content {
   width: 328px;
   margin-left: auto;
-  padding: 0 60px;
+  padding: 0 60px 0 56px;
 }
 
 .sorting-wrap {
@@ -1611,7 +1630,7 @@ html {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 400px;
+  width: 385px;
   font-family: 'open_sansregular', Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -1629,7 +1648,7 @@ html {
 .breadcrumbs li:not(:last-child)::after {
   position: absolute;
   top: 10px;
-  right: -22px;
+  right: -16px;
   content: '';
   width: 4px;
   height: 7px;
@@ -1661,8 +1680,7 @@ html {
 }
 
 .aside-header {
-  padding-top: 26px;
-  padding-bottom: 25px;
+  height: 70px;
   background: -webkit-linear-gradient(top,rgba(0,0,0,.08),rgba(0,0,0,.08) 75px,#fff 70px ,#fff 100%);
   background: -o-linear-gradient(top,rgba(0,0,0,.08),rgba(0,0,0,.08) 75px,#fff 70px ,#fff 100%);
   background: linear-gradient(to bottom,rgba(0,0,0,.08),rgba(0,0,0,.08) 75px,#fff 70px ,#fff 100%);
@@ -1670,17 +1688,16 @@ html {
 
 .aside-filters h2 {
   width: 200px;
-  margin: 0;
-  
-  margin-left: auto;
-  margin-right: 70px;
+  height: 72px;
+  margin: 0 70px 0 auto;
 }
 
 .aside-filters h2,
 .sorting h2 {
   font-family: 'gilroyextrabold', Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  height: 70px;
+  line-height: 70px;
   font-weight: 900;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1695,26 +1712,26 @@ html {
   font-weight: 900;
   border-top: 2px solid black;
   padding-top: 10px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 }
 
 .filter-form fieldset {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 .price-checker h3 {
   padding-top: 10px;
-  margin-top: 65px;
-  margin-bottom: 9px;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .range-controls {
   display: block;
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 68px;
 }
 
 .range-toggle {
@@ -1743,7 +1760,7 @@ html {
   width: 28px;
   height: 15px;
   position: absolute;
-  top: 15px;
+  top: 5px;
   left: 0;
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 14px;
@@ -1755,7 +1772,7 @@ html {
   width: 60px;
   height: 15px;
   position: absolute;
-  top: 15px;
+  top: 5px;
   left: -30px;
   font-family: 'gilroylight', Arial, sans-serif;
   font-size: 14px;
@@ -1764,7 +1781,7 @@ html {
 }
 
 .range-toggle-max {
-  left: 60%;
+  left: 53%;
 }
 
 .range-controls .scale {
@@ -1796,7 +1813,7 @@ html {
 
 .filter-form input[type="checkbox"]+label::before {
   position: absolute;
-  top: 10px;
+  top: 7px;
   left: 2px;
   content: '';
   width: 23px;
@@ -1824,7 +1841,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   content: "";
-  top: 10px;
+  top: 7px;
   left: 0;
   width: 25px;
   height: 25px;
@@ -1834,7 +1851,7 @@ html {
 
 .filter-form input[type="radio"]:checked+label::after {
   content: "";
-  top: 18px;
+  top: 15px;
   left: 8px;
   position: absolute;
   width: 9px;
@@ -1845,7 +1862,8 @@ html {
 
 .filter-form input[type="checkbox"]~label,
 .filter-form input[type="radio"]~label {
-  padding-left: 40px;
+  padding-left: 41px;
+  top: 3px;
 }
 
 .filter-form input[type="checkbox"]~label:hover,
@@ -1900,14 +1918,12 @@ html {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding-top: 25px;
-  padding-bottom: 25px;
   margin-left: 70px;
   margin-right: auto;
 }
 
 .sorting h2 {
-  margin: 0;
+  margin: 0 55px 0 0;
   padding: 0;
 }
 
@@ -1921,10 +1937,11 @@ html {
   width: 300px;
   font-family: 'open_sansregular', Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px;
   font-weight: 400;
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   padding: 0;
+  height: 70px;
+  line-height: 70px;
 }
 
 .sorting-list li {
@@ -1997,9 +2014,12 @@ html {
   position: relative;
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 48px;
+  margin-bottom: 41px;
   list-style: none;
   overflow: hidden;
+}
+.catalog-item:last-child, .catalog-item:nth-last-child(2) {
+  margin-bottom: 38px;
 }
 
 .catalog-item img {
@@ -2007,7 +2027,7 @@ html {
   height: 380px;
   
   background-color: #eeeeee;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .catalog-item-action {
@@ -2063,8 +2083,8 @@ html {
 
 .product-new::before {
   position: absolute;
-  top: 29px;
-  right: 27px;
+  top: 30px;
+  right: 25px;
   
   content: 'new';
   font-family: 'gilroyextrabold', Arial, sans-serif;
@@ -2129,6 +2149,10 @@ html {
   text-align: right;
 }
 
+.footer-user-activity .user-activity-item:nth-child(2) {
+  margin-left: 41px;
+}
+
 .pagination {
   font-size: 16px;
   letter-spacing: 0.2em;
@@ -2148,7 +2172,7 @@ html {
   line-height: 70px;
   margin: 0;
   padding: 0;
-  margin-bottom: 62px;
+  margin-bottom: 76px;
 }
 
 .pagination-link {
@@ -2156,6 +2180,7 @@ html {
 }
 
 .pagination-item:first-child {
+  margin-left: 0;
   margin-right: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -2185,7 +2210,7 @@ html {
 
 .pagination-list li {
   list-style: none;
-  padding-right: 30px;
+  margin: 0 12px;
 }
 
 /*CATALOG PAGE END*/
