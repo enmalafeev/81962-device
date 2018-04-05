@@ -1004,6 +1004,7 @@ html {
 }
 
 .about-us li {
+  position: relative;
   margin-bottom: 17px;
   padding-left: 35px;
   letter-spacing: .2px;
@@ -1034,7 +1035,7 @@ html {
 }
 
 .contacts .btn {
-  width: 260px;
+  min-width: 260px;
   margin-bottom: 81px;
 }
 
