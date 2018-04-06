@@ -1158,8 +1158,8 @@ html {
 }
 
 .social-networks {
+  width: 100%;
   margin-left: auto;
-  transform: translate(9%);
 }
 
 
