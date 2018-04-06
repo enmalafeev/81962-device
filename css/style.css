@@ -1157,7 +1157,8 @@ html {
 }
 
 .social-networks {
-  margin-right: 473px;
+  margin-left: auto;
+  transform: translate(9%);
 }
 
 
@@ -1265,6 +1266,8 @@ html {
   background-image: url('../img/logo-html.svg');
   background-repeat: no-repeat;
   background-position: center;
+
+  margin-left: auto;
 }
 
 .creator:hover,
