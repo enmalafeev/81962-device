@@ -1075,6 +1075,7 @@ html {
   -webkit-box-pack: flex-end;
   -ms-flex-pack: flex-end;
   justify-content: flex-end;
+  width: 100%;
 }
 
 .main-footer a {
