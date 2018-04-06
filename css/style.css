@@ -1072,9 +1072,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
 }
 
 .main-footer a {
@@ -1157,8 +1157,9 @@ html {
 }
 
 .social-networks {
-  margin-left: 500px;
+  margin-right: 473px;
 }
+
 
 .social-networks-list {
   display: -webkit-box;
@@ -1261,7 +1262,6 @@ html {
   display: block;
   width: 27px;
   height: 35px;
-  margin-left: auto;
   background-image: url('../img/logo-html.svg');
   background-repeat: no-repeat;
   background-position: center;
