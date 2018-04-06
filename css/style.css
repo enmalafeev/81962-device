@@ -1,6 +1,5 @@
 @font-face {
   font-family: 'gilroyextrabold';
-  src: url('../fonts/gilroyextrabold.ttf') format('truetype');
   src: url('../fonts/gilroyextrabold.woff') format('woff');
   src: url('../fonts/gilroyextrabold.woff2') format('woff2');
 
@@ -10,7 +9,6 @@
 
 @font-face {
   font-family: 'gilroylight';
-  src: url('../fonts/gilroylight.ttf') format('truetype');
   src: url('../fonts/gilroylight.woff') format('woff');
   src: url('../fonts/gilroylight.woff2') format('woff2');
 
@@ -20,7 +18,6 @@
 
 @font-face {
   font-family: 'open_sanslight';
-  src: url('../fonts/opensanslight.ttf') format('truetype');
   src: url('../fonts/opensanslight.woff') format('woff');
   src: url('../fonts/opensanslight.woff2') format('woff2');
 
@@ -30,7 +27,6 @@
 
 @font-face {
   font-family: 'open_sansregular';
-  src: url('../fonts/opensans.ttf') format('truetype');
   src: url('../fonts/opensans.woff') format('woff');
   src: url('../fonts/opensans.woff2') format('woff2');
   font-weight: normal;
@@ -55,7 +51,6 @@ a {
 
 img {
   max-width: 100%;
-  /* height: auto; */
 }
 
 .visually-hidden:not(:focus):not(:active),
