@@ -2,7 +2,8 @@
   font-family: 'gilroyextrabold';
   src: url('../fonts/gilroyextrabold.woff') format('woff');
   src: url('../fonts/gilroyextrabold.woff2') format('woff2');
-  src: url('../fonts/gilroyextrabold.ttf') format('ttf');
+  src: url('../fonts/gilroyextrabold.ttf') format('truetype');
+
   font-weight: normal;
   font-style: normal;
 }
@@ -11,7 +12,8 @@
   font-family: 'gilroylight';
   src: url('../fonts/gilroylight.woff') format('woff');
   src: url('../fonts/gilroylight.woff2') format('woff2');
-  src: url('../fonts/gilroylight.ttf') format('ttf');
+  src: url('../fonts/gilroylight.ttf') format('truetype');
+
   font-weight: normal;
   font-style: normal;
 }
@@ -20,7 +22,8 @@
   font-family: 'open_sanslight';
   src: url('../fonts/opensanslight.woff') format('woff');
   src: url('../fonts/opensanslight.woff2') format('woff2');
-  src: url('../fonts/opensanslight.ttf') format('ttf');
+  src: url('../fonts/opensanslight.ttf') format('truetype');
+
   font-weight: normal;
   font-style: normal;
 }
